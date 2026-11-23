@@ -31,7 +31,7 @@ I visited the Networkwalks project task page and downloaded the provided passwor
 
 [Networkwalks Password Cracking Lab](https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/)
 
-![Downloaded Protected PDF](screenshots/01-locked-pdf.png)
+![Downloaded Protected PDF](john7.png)
 
 ### Step 2: Open the Networkwalks Hash Calculator
 
@@ -39,13 +39,13 @@ I opened the Networkwalks Hash Calculator using a web browser.
 
 [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/)
 
-![Networkwalks Hash Calculator](screenshots/02-hash-calculator.png)
+![Networkwalks Hash Calculator](hash.png)
 
 ### Step 3: Upload the Protected PDF
 
 I uploaded the downloaded PDF file to the Hash Calculator. The tool processed the file and generated a hash value.
 
-![PDF Hash Extraction](screenshots/03-pdf-upload.png)
+![PDF Hash Extraction](hash1.png)
 
 ### Step 4: Copy the Extracted Hash
 
@@ -53,7 +53,7 @@ After the extraction process, I copied the complete hash value.
 
 The extracted hash begins with `$pdf$`. I ensured that I copied the entire value without leaving out any characters.
 
-![Extracted PDF Hash](screenshots/04-extracted-hash.png)
+![Extracted PDF Hash](hash2.png)
 
 ### Step 5: Open the Networkwalks Password Cracker
 
@@ -61,13 +61,13 @@ I opened the Networkwalks Password Cracker in my web browser.
 
 [Networkwalks Password Cracker](https://networkwalks.com/password-cracker/)
 
-![Networkwalks Password Cracker](screenshots/05-password-cracker.png)
+![Networkwalks Password Cracker](hash3.png)
 
 ### Step 6: Submit the Hash
 
 I pasted the extracted PDF hash into the Password Cracker and started the password-cracking process.
 
-![Hash Submitted for Cracking](screenshots/06-hash-submitted.png)
+![Hash Submitted for Cracking](hash4.png)
 
 ### Step 7: Wait for Password Recovery
 
@@ -75,7 +75,7 @@ The Password Cracker attempted different password candidates against the supplie
 
 The time required depends on the password's complexity and the tool's capabilities.
 
-![Password Recovery Process](screenshots/07-password-recovery.png)
+![Password Recovery Process](hash5.png)
 
 ### Step 8: Obtain the Recovered Password
 
@@ -83,7 +83,7 @@ After the cracking process, the tool displayed the recovered password.
 
 I recorded the result for the next verification step.
 
-![Recovered Password](screenshots/08-recovered-password.png)
+![Recovered Password](hash6.png)
 
 ### Step 9: Verify the Password
 
@@ -91,7 +91,7 @@ I opened the original protected PDF file and entered the recovered password.
 
 The document opened successfully, confirming that the recovered password was correct.
 
-![Successfully Opened PDF](screenshots/09-pdf-opened.png)
+![Successfully Opened PDF](hash7.png)
 
 ## 5. Key Concepts Learned
 
