@@ -70,7 +70,7 @@ After downloading the setup file, Johnny was installed on the Windows computer.
 
 **Screenshot Evidence:**
 
-![Johnny Installation](screenshots/02-johnny-installation.png)
+![Johnny Installation](john8.png)
 
 *Figure 2: Johnny GUI installation.*
 
@@ -110,7 +110,7 @@ The purpose was to obtain the password hash associated with the protected PDF be
 
 **Screenshot Evidence:**
 
-![Protected PDF](screenshots/04-locked-pdf.png)
+![Protected PDF](john7.png)
 
 *Figure 4: Password-protected
 
