@@ -113,3 +113,92 @@ The purpose was to obtain the password hash associated with the protected PDF be
 ![Protected PDF](screenshots/04-locked-pdf.png)
 
 *Figure 4: Password-protected
+
+
+
+## Step 3: Extracting the PDF Hash and Cracking the Password
+
+In this stage, I used John the Ripper through the Johnny graphical interface to attempt to recover the password of the protected PDF file.
+
+### 3.1 Download the Encrypted PDF
+
+I downloaded the password-protected PDF file (`My Locked PDF1.pdf`) provided for the lab and saved it on my computer.
+
+![Downloaded Protected PDF](screenshots/04-locked-pdf.png)
+
+### 3.2 Extract the PDF Hash
+
+I opened the [Online Hash Crack PDF Hash Extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php).
+
+I browsed for the encrypted PDF file, selected it, and clicked **Upload** to extract its password hash.
+
+> **Note:** Only upload files you are authorized to share with the service. Uploading a PDF to a third-party website means sending that document to that service.
+
+![PDF Hash Extraction](screenshots/05-pdf-hash-extraction.png)
+
+### 3.3 Copy and Prepare the Extracted Hash
+
+After the extraction process, the website displayed the PDF hash.
+
+I copied the extracted hash value. The hash should begin with `$pdf$`.
+
+If the extracted value contains additional characters, such as `b'` at the beginning, I removed those characters before saving the hash.
+
+![Extracted PDF Hash](screenshots/06-extracted-hash.png)
+
+### 3.4 Save the Hash in a Text File
+
+I opened Notepad and pasted the extracted hash into a new text document.
+
+I saved the file using the name:
+
+`hash1.txt`
+
+This file would be used by Johnny as the input for the password recovery attempt.
+
+### 3.5 Load the Hash into Johnny
+
+I reopened Johnny and selected **Open password file**.
+
+I browsed to the location where I had saved `hash1.txt`, selected the file, and clicked **Open**.
+
+This loaded the extracted PDF hash into Johnny.
+
+### 3.6 Start the Password Recovery Attempt
+
+After loading the hash, I clicked **Start new attack**.
+
+John the Ripper then began testing password candidates against the extracted hash.
+
+The time required depends on factors such as the computer's processing speed, the PDF encryption settings, and the complexity of the original password.
+
+![John the Ripper Password Recovery](screenshots/07-john-recovery.png)
+
+### 3.7 Verify the Recovered Password
+
+After the recovery process, I used the recovered password to open the original encrypted PDF file.
+
+I entered the recovered password in the PDF password prompt to verify whether it successfully opened the document.
+
+![Password Verification](screenshots/08-recovery-verification.png)
+
+**Result:** [Update this section with your actual result after completing the lab.]
+
+- Password recovery status: [Successful / Unsuccessful]
+- PDF verification: [Opened successfully / Not verified]
+
+---
+
+## Key Concepts Learned
+
+**Encryption:** Encryption transforms readable information into an unreadable form using a cryptographic process. With the appropriate key or password, the original information can be recovered.
+
+**Hashing:** Hashing transforms data into a fixed-format value. It is designed to be a one-way process rather than something that can simply be reversed.
+
+**Password Cracking:** John the Ripper tests possible passwords against an extracted password hash to identify a matching password.
+
+**PDF Hash Extraction:** The extraction process obtains the password-related data required by John the Ripper to perform its password recovery attempt.
+
+## Conclusion
+
+Through this practical exercise, I learned how to extract a password hash from an encrypted PDF, prepare the hash in a text file, load it into Johnny, and use John the Ripper to attempt password recovery. I also learned the importance of verifying recovered
