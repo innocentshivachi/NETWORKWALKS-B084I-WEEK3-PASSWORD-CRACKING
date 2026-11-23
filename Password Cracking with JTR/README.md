@@ -52,7 +52,7 @@ The `john.exe` executable was located inside the `run` directory.
 
 **Screenshot Evidence:**
 
-![John the Ripper Download](screenshots/01-john-download.png)
+![John the Ripper Download](john.png)
 
 *Figure 1: Downloaded John the Ripper package.*
 
@@ -92,7 +92,7 @@ This configuration connects Johnny's graphical interface to the underlying John 
 
 **Screenshot Evidence:**
 
-![Johnny Configuration](screenshots/03-johnny-configuration.png)
+![Johnny Configuration](john2.png)
 
 *Figure 3: Configuring Johnny to locate john.exe.*
 
@@ -124,7 +124,7 @@ In this stage, I used John the Ripper through the Johnny graphical interface to 
 
 I downloaded the password-protected PDF file (`My Locked PDF1.pdf`) provided for the lab and saved it on my computer.
 
-![Downloaded Protected PDF](screenshots/04-locked-pdf.png)
+![Downloaded Protected PDF](john3.png)
 
 ### 3.2 Extract the PDF Hash
 
@@ -134,7 +134,7 @@ I browsed for the encrypted PDF file, selected it, and clicked **Upload** to ext
 
 > **Note:** Only upload files you are authorized to share with the service. Uploading a PDF to a third-party website means sending that document to that service.
 
-![PDF Hash Extraction](screenshots/05-pdf-hash-extraction.png)
+![PDF Hash Extraction](john4.png)
 
 ### 3.3 Copy and Prepare the Extracted Hash
 
@@ -144,7 +144,7 @@ I copied the extracted hash value. The hash should begin with `$pdf$`.
 
 If the extracted value contains additional characters, such as `b'` at the beginning, I removed those characters before saving the hash.
 
-![Extracted PDF Hash](screenshots/06-extracted-hash.png)
+![Extracted PDF Hash](john5.png)
 
 ### 3.4 Save the Hash in a Text File
 
@@ -172,7 +172,7 @@ John the Ripper then began testing password candidates against the extracted has
 
 The time required depends on factors such as the computer's processing speed, the PDF encryption settings, and the complexity of the original password.
 
-![John the Ripper Password Recovery](screenshots/07-john-recovery.png)
+![John the Ripper Password Recovery](john6.png)
 
 ### 3.7 Verify the Recovered Password
 
@@ -180,7 +180,7 @@ After the recovery process, I used the recovered password to open the original e
 
 I entered the recovered password in the PDF password prompt to verify whether it successfully opened the document.
 
-![Password Verification](screenshots/08-recovery-verification.png)
+![Password Verification](joh.png)
 
 **Result:** [Update this section with your actual result after completing the lab.]
 
